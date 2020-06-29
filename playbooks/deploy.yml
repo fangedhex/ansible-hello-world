@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+    - name: Deploy Hello World container
+      docker_container:
+        name: hello-world
+        image: crccheck/hello-world
+        ports:
+          - "8000:8000"

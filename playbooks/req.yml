@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+    - name: Apt
+      apt:
+        update_cache: yes
+        pkg:        
+          - python
+          - python-docker
